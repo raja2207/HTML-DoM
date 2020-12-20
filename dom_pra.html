@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>raja is bad</p>
+    <p id="para1">raja is bad1</p>
+    <p id="para2">raja is bad2</p>
+    <p class="calsspara1">raja is bad3</p>
+    <p class="calsspara2">raja is bad4</p>
+    <p>raja is bad5</p>
+    <button >ClickMe</button>
+<div>
+    <input id="raja" type="text">
+    <button  onclick="seach()" type="button">clickItSElf</button>
+</div>
+    <script>
+
+
+// 1 hoe to select the elements
+      //  let output=  document.querySelectorAll("p");
+     //  this giving for total P tag infromation, you want single P tag use querySelector or getElementByTagName("Tagname") or use getElementById("idname") or getElementByClassName("calssname") 
+      
+       
+      //  console.log(output);
+
+         //2 how to remove  single P tag  removed
+      // let output=document.querySelector("p");
+      //    output.remove();
+      //  console.log(output);
+
+      //  how to remove  multi tags remove
+     // let output=document.querySelectorAll("p")
+      //  output.forEach((p) =>{ 
+       //   p.remove(); });
+            
+      //  console.log(output);
+      
+      // 3 how change the element content in single   element or tag
+
+      //  let output=document.querySelectorAll("p")
+        // output.textContent="raja is good " 
+        //console.log(output);
+
+
+      // multi tags
+     // let output=document.querySelectorAll("p");
+    // output.forEach((p)=>{p.textContent="raja is good"})
+     // console.log(output);
+
+
+      //4 how to create element and provide content
+     // let output=document.createElement("h3")
+      //  output.textContent="Always Super";
+      //  document.querySelector("body").appendChild(output)
+      //  console.log(output);
+
+      // 5 how to use events 
+
+      // let output=document.querySelector("button").addEventListener("click",(event)=>{
+      //ty1 // console.log("raja");
+        //ty2 //  event.target.textContent="raja";
+        //ty3 //document.getElementById("para1").textContent="ok"; })
+
+        // 6 how track inputs
+
+     //let output=document.querySelector("input").addEventListener("input",(event)=>{
+       //  let x=event.target.value;
+        // console.log(x);   })
+
+
+
+        //function seach(){
+          //  let output=document.getElementById('raja').value
+            //let x;
+           // if(output == "raja"){
+             //   x="yes";
+           // } else{
+          //      x="no";
+          //  }
+         // if(output <1  ||  output<30){
+           //   x="ok Man";
+         // } else{
+           //   x= output;
+          //}
+           // console.log(x);
+
+
+      //  }
+     
+      //let output=document.querySelector('body')
+         // output.style.textAlign="center";
+    //   output.style.marginTop="40vh";
+      //output.style.backgroundImage="house2"
+
+
+///    ----------                      complete the HTML   DOM   ------------------------
+
+
+
+
+
+
+      // how to use objects
+      /*let input={
+          sNo:"1",
+          Title:"raja",
+          Name:"rajesh",
+          RegNo:"211413",
+          Amount:"5000",
+          total: function(){
+              console.log("raja is bad");
+          }
+          log:function(data){
+              console.log(data);
+
+          }
+      }
+      input.Amount("4000");
+      console.log(input.total()); 
+
+
+      //how to check username and password
+
+      let email="rajarajesh805@gmail.com";
+      let password="8912345670";
+      function emailcheck(check){
+          if(check.includes("@")){
+              return true;
+
+          } else{
+              return false;
+          }
+          
+      }
+      console.log(emailcheck(email));
+
+      function pass(word){
+          if((word.includes("123")) && (word.length>7)){
+              return "ok";
+          }else{
+              return "not_ok";
+          }
+
+      }
+console.log(pass(password));   
+
+
+
+let email="rajarajesh805@gmail.com";
+      let password="12345678";
+      mailcheck= function(views){
+          if(views.includes("@")){
+              return true;
+          } else {
+              return false;
+          }
+
+      }
+      console.log(mailcheck(email));
+
+      passcheck= function(values){
+          if(((values.includes("1")) && (values.includes("8")) && (values.includes("4")) )   && (values.length>6)){
+              return "yes";
+
+          } else{
+              return "no";
+          }
+<img style="-webkit-user-select: none;margin: auto;cursor: zoom-out;" src="" width="750" height="480">
+      }
+      console.log(passcheck(password));    
+
+      let output=["raja","very","bad","man"];
+      //console.log(output.indexOf("bad"));
+     let raja=output.findIndex(function (get){
+         return get=="very";
+     });
+      console.log(raja);    */
+
+      let output=["raja","very","bad","man"];
+      let x=function(a,b){
+          let y=a.find(function(tr){
+              return tr== b;
+          });
+          return y;
+      }
+      console.log(x(output,"bad"));
+
+
+
+    </script>
+</body>
+</html>
